@@ -6,7 +6,11 @@ import { GrMenu, GrClose } from "react-icons/gr";
 import "@/styles/navbar.css";
 import Image from "next/image";
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+  activeSection: string;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -38,25 +42,33 @@ const Navbar: React.FC = () => {
         <div className="hidden md:flex items-center space-x-12">
           <a
             href="#about"
-            className="text-white hover:text-[#E066FF] transition-colors duration-300"
+            className={`text-white hover:text-[#E066FF] transition-colors duration-300 ${
+              activeSection === "about" ? "text-[#E066FF]" : ""
+            }`}
           >
             About
           </a>
           <a
             href="#schedule"
-            className="text-white hover:text-[#E066FF] transition-colors duration-300"
+            className={`text-white hover:text-[#E066FF] transition-colors duration-300 ${
+              activeSection === "schedule" ? "text-[#E066FF]" : ""
+            }`}
           >
             Schedule
           </a>
           <a
             href="#sponsors"
-            className="text-white hover:text-[#E066FF] transition-colors duration-300"
+            className={`text-white hover:text-[#E066FF] transition-colors duration-300 ${
+              activeSection === "sponsors" ? "text-[#E066FF]" : ""
+            }`}
           >
             Sponsors
           </a>
           <a
-            href="#faqs"
-            className="text-white hover:text-[#E066FF] transition-colors duration-300"
+            href="#faq"
+            className={`text-white hover:text-[#E066FF] transition-colors duration-300 ${
+              activeSection === "faq" ? "text-[#E066FF]" : ""
+            }`}
           >
             FAQs
           </a>
@@ -86,28 +98,36 @@ const Navbar: React.FC = () => {
             <div className="flex flex-col space-y-4 items-center">
               <a
                 href="#about"
-                className="text-white hover:text-[#E066FF] transition-colors duration-300"
+                className={`text-white hover:text-[#E066FF] transition-colors duration-300 ${
+                  activeSection === "about" ? "text-[#E066FF]" : ""
+                }`}
                 onClick={() => setIsOpenMenu(false)}
               >
                 About
               </a>
               <a
                 href="#schedule"
-                className="text-white hover:text-[#E066FF] transition-colors duration-300"
+                className={`text-white hover:text-[#E066FF] transition-colors duration-300 ${
+                  activeSection === "schedule" ? "text-[#E066FF]" : ""
+                }`}
                 onClick={() => setIsOpenMenu(false)}
               >
                 Schedule
               </a>
               <a
                 href="#sponsors"
-                className="text-white hover:text-[#E066FF] transition-colors duration-300"
+                className={`text-white hover:text-[#E066FF] transition-colors duration-300 ${
+                  activeSection === "sponsors" ? "text-[#E066FF]" : ""
+                }`}
                 onClick={() => setIsOpenMenu(false)}
               >
                 Sponsors
               </a>
               <a
-                href="#faqs"
-                className="text-white hover:text-[#E066FF] transition-colors duration-300"
+                href="#faq"
+                className={`text-white hover:text-[#E066FF] transition-colors duration-300 ${
+                  activeSection === "faq" ? "text-[#E066FF]" : ""
+                }`}
                 onClick={() => setIsOpenMenu(false)}
               >
                 FAQs
