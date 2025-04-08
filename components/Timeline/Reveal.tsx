@@ -43,19 +43,26 @@ export default function Reveal({ children , even=false }: props) {
       style={{ position: "relative" }}
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.8 }}
-      
+      viewport={{ once: true, amount: 0.5 }}
     >
       <motion.div
         ref={ref}
         variants={{
-          hidden: { opacity: 0, x: even ? -200 : 200, },
-          visible: { opacity: 1, x: 0 },
+          hidden: { opacity: 0, x: even ? -100 : 100 },
+          visible: { 
+            opacity: 1, 
+            x: 0,
+            transition: {
+              type: "spring",
+              stiffness: 100,
+              damping: 20,
+              duration: 0.8
+            }
+          },
         }}
-        // variants={card}
         initial="hidden"
         animate={controls}
-        transition={{ duration: 0.7, delay: 0.1}}
+        transition={{ duration: 0.8, delay: 0.2 }}
       >
         {children}
       </motion.div>

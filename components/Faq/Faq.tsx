@@ -86,7 +86,7 @@ const HacksFaq = [
   },
   {
     question: <>Have more questions? </>,
-    answer: <>Feel free to write to us at asu@thesoda.io or create a ticket🎫 on <a className="text-blue-400 underline" href="https://discord.gg/the-software-developers-association-762811961238618122" target="_blank">discord</a>
+    answer: <>Feel free to write to us at help@innovationhacks.dev or create a ticket🎫 on <a className="text-blue-400 underline" href="https://discord.gg/the-software-developers-association-762811961238618122" target="_blank">discord</a>
     </>,
   },
 ];

@@ -21,15 +21,22 @@ const Content: React.FC = () => {
       y: 0,
       x: 0,
       transition: {
-        type: "easeIn",
-        duration: 1.1,
+        type: "easeInOut",
+        duration: 1.5,
+        ease: [0.4, 0, 0.2, 1]
       },
     },
   };
 
   const childVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 1 } },
+    visible: { 
+      opacity: 1, 
+      transition: { 
+        duration: 1.5,
+        ease: [0.4, 0, 0.2, 1]
+      } 
+    },
   };
 
   const buttonVariants = {
