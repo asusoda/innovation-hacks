@@ -54,18 +54,6 @@ const Content: React.FC = () => {
       variants={h1Variants}
     >
       <div className="w-full">
-        <motion.div variants={childVariants} animate="visible" className="mb-8">
-          <div className="text-xs md:text-sm text-[#E066FF] mb-2 font-medium">
-            The Ultimate Hackathon Brought to You By
-          </div>
-          <div className="flex justify-center items-center space-x-4 text-[#E066FF]">
-            <span>THE AI SOCIETY</span>
-            <span>X</span>
-            <span>GDSC</span>
-            <span>X</span>
-            <span>SoDA</span>
-          </div>
-        </motion.div>
         <motion.div className="mb-12" variants={childVariants}>
           <motion.div variants={childVariants} className="flex justify-center">
             <img 
