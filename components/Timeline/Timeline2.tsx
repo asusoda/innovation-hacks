@@ -34,7 +34,7 @@ export default function Timeline2() {
   }, []);
 
   return (
-    <div className="mt-16 sm:mt-16 flex flex-col items-center">
+    <div className="pt-16 sm:mt-16 flex flex-col items-center">
       <h1 className="text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-bold mb-16">
         Schedule
       </h1>
@@ -50,7 +50,7 @@ export default function Timeline2() {
             />
           ))}
         </div>
-      </div>
+      </div> 
     </div>
   );
 }

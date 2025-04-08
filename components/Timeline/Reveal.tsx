@@ -47,6 +47,7 @@ export default function Reveal({ children , even=false }: props) {
     >
       <motion.div
         ref={ref}
+        className="md:mt-0 mt-24"
         variants={{
           hidden: { opacity: 0, x: even ? -100 : 100 },
           visible: { 

@@ -5,10 +5,8 @@ import "../../styles/hero.css";
 
 export default function HeroSection() {
   return (
-    <div className="min-h-screen flex items-center justify-center gradient-background w-full py-20">
-      <div className="container mx-auto px-4">
+    <div className="">
         <Content />
-      </div>
     </div>
   );
 }

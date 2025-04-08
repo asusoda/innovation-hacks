@@ -110,14 +110,14 @@ export default function Home() {
       {/* Content container */}
       <div className="relative z-10">
         <Navbar activeSection={activeSection}/>
-        <div className="bg-[#0D0D0D]">
+        <div className="">
           <HeroSection />
           <div id="about">
             <About />
           </div>
 
           {/* <div id="themes">
-            <Themes />
+            <Themes /> 
           </div> */}
 
           <div id="schedule">

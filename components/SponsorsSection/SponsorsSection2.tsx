@@ -145,7 +145,7 @@ export default function SponsorsSection2() {
   };
 
   return (
-    <div className="mt-16 sm:mt-16">
+    <div className="pt-16 sm:mt-16">
       <h1 className="my-10 text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-logo sponsorContainer1">
         Sponsors
       </h1>

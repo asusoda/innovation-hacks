@@ -32,7 +32,7 @@ function SponsorsSection() {
 
   ];
   return (
-    <div className="mt-36 sm:mt-56">
+    <div className="pt-36 sm:mt-56">
       <h1 className="my-10 text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-logo sponsorContainer1">
         Sponsors
       </h1>
@@ -72,7 +72,7 @@ function SponsorsSection() {
             <SponsorCard
               key={src}
               imageUrl={src}
-              imageSize={"w-36 h-12 sm:w-80 sm:h-20"}
+              imageSize={"w-48 h-16 sm:w-72 sm:h-28"}
               hoverEffect={"hover-effect-gold"}
               imageAlt={alt}
             />
@@ -88,7 +88,7 @@ function SponsorsSection() {
             <SponsorCard
               key={src}
               imageUrl={src}
-              imageSize={"w-24 h-10 sm:w-64 sm:h-16"}
+              imageSize={"w-48 h-16 sm:w-72 sm:h-28"}
               hoverEffect={"hover-effect-silver"}
               imageAlt={alt}
             />
@@ -103,7 +103,7 @@ function SponsorsSection() {
             <SponsorCard
               key={src}
               imageUrl={src}
-              imageSize={"w-20 h-8 sm:w-40 sm:h-14"}
+              imageSize={"w-48 h-16 sm:w-72 sm:h-28"}
               hoverEffect={"hover-effect-bronze"}
               imageAlt={alt}
             />

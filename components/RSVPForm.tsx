@@ -113,7 +113,7 @@ const RSVPForm = () => {
       <div className="absolute left-0 top-1/4 w-[300px] h-[300px] bg-purple-600/20 rounded-full filter blur-[100px] -z-10"></div>
       <div className="absolute right-0 bottom-1/4 w-[300px] h-[300px] bg-indigo-600/20 rounded-full filter blur-[100px] -z-10"></div>
       
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -138,7 +138,7 @@ const RSVPForm = () => {
             Open RSVP Form
           </button>
         </div>
-      </motion.div>
+      </motion.div> */}
 
       {/* Modal - Moved outside the motion.div */}
       <AnimatePresence>

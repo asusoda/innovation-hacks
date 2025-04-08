@@ -28,10 +28,10 @@ const Footer = () => {
   };
 
   return (
-    <footer className="mt-24 pt-5 lg:pt-8 pb-2 lg:pb-8 bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20">
+    <footer className=" p-4  bg-black  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5">
       <div className="flex flex-col items-center">
         {/* Organization Logos */}
-        <div className="flex justify-center items-center space-x-8 mb-8">
+        <div className="flex flex-row flex-wrap  justify-center items-center space-x-8 mb-8">
           <a href={SOCIALS.ai_discord} target="_blank" rel="noopener noreferrer">
             <Image src="/assets/images/AI_Society.png" alt="AI Society Logo" width={120} height={40} className="object-contain hover:opacity-80 transition-opacity" />
           </a>
@@ -90,7 +90,7 @@ const Footer = () => {
                 Contact Us
               </a>
               <div className="mx-5 lg:mx-0">
-                Copyrights © 2024. All rights reserved by The Software Developers Association
+                Copyrights © 2025. All rights reserved by The Software Developers Association
               </div>
             </div>
           </div>
