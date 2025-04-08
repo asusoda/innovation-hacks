@@ -18,11 +18,11 @@ const About = () => {
   }, [isInView, controls]);
 
   return (
-    <div className="w-screen flex-col sm:px-14 md:px-40 lg:px-40 xl:px-80 mt-36 sm:mt-56">
-      <h1 className="text-4xl font-bold text-center mb-8">
+    <div className="w-screen flex-col sm:px-14 md:px-40 lg:px-40 xl:px-80 py-24">
+      <h1 className="text-4xl font-bold text-center mb-16 text-white">
         What is Innovation Hacks?
       </h1>
-      <div className="mt-24 flex flex-col sm:flex-row w-full items-center justify-center gap-5 px-5">
+      <div className="flex flex-col sm:flex-row w-full items-center justify-center gap-5 px-5">
         <div className="basis-1/3 border-2 rounded-2xl w-full p-5 glassy-effect aboutContainer1">
           <h1 className="text-4xl my-2 font-semibold blue-logo">
             <CountUp

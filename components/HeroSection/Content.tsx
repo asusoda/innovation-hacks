@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import CountdownTimer from "./CountdownTimer";
+import { openRSVPModal } from "@/components/RSVPForm";
 
 const Content: React.FC = () => {
   useEffect(() => {
@@ -51,6 +52,12 @@ const Content: React.FC = () => {
   useEffect(() => {
     controls.start("visible");
   }, [controls, isInView]);
+
+  const handleRSVPClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    console.log("Hero RSVP button clicked");
+    openRSVPModal();
+  };
 
   return (
     <motion.div
@@ -103,14 +110,28 @@ const Content: React.FC = () => {
         <CountdownTimer />
       </motion.div>
       <div className="!mt-10">
-        <a
-          href="https://thesoda.io/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block px-8 py-4 bg-[#E066FF] text-white font-bold rounded-lg hover:bg-[#D15FEF] transition-colors duration-300"
-        >
-          RSVP NOW
-        </a>
+        <div className="flex flex-col md:flex-row gap-4 md:gap-6">
+          <button
+            onClick={handleRSVPClick}
+            className="bg-[#E066FF] hover:bg-[#D15FEF] text-white py-2 px-4 md:py-3 md:px-6 rounded-md font-semibold shadow-lg transition duration-300 flex items-center justify-center"
+          >
+            <span>RSVP Now</span>
+            <svg
+              className="w-5 h-5 ml-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
       <div className="text-white text-sm mt-8">
         FREE FOOD • ALL SKILL LEVELS WELCOME

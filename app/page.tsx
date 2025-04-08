@@ -18,6 +18,7 @@ import TweetFeed from "@/components/Tweets/TweetFeed";
 import About from "@/components/About/About";
 import LoadingScreen from "@/components/LoadingScreen";
 import SponsorsSection2 from "@/components/SponsorsSection/SponsorsSection2";
+import RSVPForm from "@/components/RSVPForm";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
@@ -29,6 +30,7 @@ export default function Home() {
     sponsors: number,
     prizes: number,
     team: number,
+    rsvp: number,
     faq: number
   ) => {
     const scrollPosition = window.scrollY;
@@ -45,8 +47,10 @@ export default function Home() {
       setActiveSection("sponsors");
     } else if (scrollPosition >= prizes && scrollPosition < team) {
       setActiveSection("prizes");
-    } else if (scrollPosition >= team && scrollPosition < faq) {
+    } else if (scrollPosition >= team && scrollPosition < rsvp) {
       setActiveSection("team");
+    } else if (scrollPosition >= rsvp && scrollPosition < faq) {
+      setActiveSection("rsvp");
     } else if (scrollPosition >= faq) {
       setActiveSection("faq");
     } else {
@@ -64,15 +68,17 @@ export default function Home() {
       const sponsors = document.getElementById("sponsors");
       const prizes = document.getElementById("prizes");
       const team = document.getElementById("team");
+      const rsvp = document.getElementById("rsvp");
       const faq = document.getElementById("faq");
 
-      if (about && themes && schedule && sponsors && prizes && team && faq) {
+      if (about && themes && schedule && sponsors && prizes && team && rsvp && faq) {
         const aboutOffset = about.offsetTop;
         const themesOffset = themes.offsetTop;
         const scheduleOffset = schedule.offsetTop;
         const sponsersOffset = sponsors.offsetTop;
         const prizesOffset = prizes.offsetTop;
         const teamOffset = team.offsetTop;
+        const rsvpOffset = rsvp.offsetTop;
         const faqOffset = faq.offsetTop;
 
         // console.log(aboutOffset, themesOffset, scheduleOffset, sponsersOffset, prizesOffset, teamOffset, faqOffset);
@@ -83,6 +89,7 @@ export default function Home() {
           sponsersOffset,
           prizesOffset,
           teamOffset,
+          rsvpOffset,
           faqOffset
         );
       }
@@ -96,51 +103,47 @@ export default function Home() {
   }, [activeSection]);
 
   return (
-    <main className="overflow-x-hidden bg-grey-900">
-      {/* <LoadingScreen/> */}
-      <Navbar activeSection={activeSection}/>
-      {/* <div className="bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 "> */}
-      {/* <PreLoader /> */}
-      {/* <FlareCursor /> */}
+    <main className="overflow-x-hidden bg-[#0D0D0D] relative">
+      {/* Main gradient overlay */}
+      <div className="fixed inset-0 bg-gradient-to-b from-purple-900/30 via-[#0D0D0D] to-[#0D0D0D] pointer-events-none" />
+      
+      {/* Content container */}
+      <div className="relative z-10">
+        <Navbar activeSection={activeSection}/>
+        <div className="bg-[#0D0D0D]">
+          <HeroSection />
+          <div id="about">
+            <About />
+          </div>
 
-      {/* <BackGround /> */}
+          {/* <div id="themes">
+            <Themes />
+          </div> */}
 
-      <HeroSection />
+          <div id="schedule">
+            <Timeline2 />
+          </div>
 
-      <div id="about">
-        <br />
-        <About />
+          <div id="sponsors">
+            <SponsorsSection2/>
+          </div>
+
+          {/*<div id="team">
+            <TeamSection />
+          </div> */}
+
+          {/* <TweetFeed /> */}
+          
+          <div id="rsvp">
+            <RSVPForm />
+          </div>
+
+          <div id="faq">
+            <Faq />
+          </div>
+        </div>
+        <Footer />
       </div>
-
-      {/* <div id="themes">
-        <br />
-        <Themes />
-      </div> */}
-
-      <div id="schedule">
-        <br />
-        <Timeline2 />
-      </div>
-
-      <div id="sponsors">
-        <br />
-        {/* <SponsorsSection /> */}
-        <SponsorsSection2/>
-      </div>
-
-      {/*<div id="team">
-        <br />
-        <TeamSection />
-      </div> */}
-
-     {/* <TweetFeed /> */}
-
-      <div id="faq">
-        <br />
-        <Faq />
-      </div>
-
-      <Footer />
     </main>
   );
 }
