@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="flex flex-row flex-wrap  justify-center items-center space-x-8 mb-8">
           <a href={SOCIALS.ai_discord} target="_blank" rel="noopener noreferrer">
             <Image src="/assets/images/AI_Society.png" alt="AI Society Logo" width={120} height={40} className="object-contain hover:opacity-80 transition-opacity" />
-          </a>
+         </a>
           <a href={SOCIALS.soda_discord} target="_blank" rel="noopener noreferrer">
             <Image src="/assets/images/soda.png" alt="SoDA Logo" width={120} height={40} className="object-contain hover:opacity-80 transition-opacity" />
           </a>
