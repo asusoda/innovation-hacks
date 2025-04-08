@@ -5,72 +5,53 @@ import "../../styles/faq/background.css";
 
 const HacksFaq = [
   {
-    question: <>Who can participate? </>,
+    question: "Who can participate?",
     answer: (
       <>
-        Hack SoDA 2024 is open to a diverse range of participants, including
-        students, professionals, and individuals with varying skill levels.
-        Whether you are a beginner or an experienced developer, despite the
-        field of academic discipline chosen, you are eligible to join us! 🚀
+        Innovation Hacks 2025 is open to a diverse range of participants, including
+        students, developers, designers, and tech enthusiasts. Whether you're a
+        beginner or an experienced coder, there's a place for you here!
       </>
     ),
   },
   {
-    question: <>What if this is my first hackathon? </>,
+    question: "I've never been to a hackathon before. Should I participate?",
     answer: (
       <>
-        Congratulations on considering your first hackathon! Hack SoDA 2024 is a
-        great opportunity for beginners. We would be having expert sessions,
-        guidance by mentors along the way to help you out in executing your
-        ideas into projects. See you in the hackathon! 🤖
+        Congratulations on considering your first hackathon! Innovation Hacks 2025 is a
+        perfect starting point. We welcome participants of all skill levels and
+        provide mentorship throughout the event. It's an excellent opportunity to
+        learn, collaborate, and create something amazing!
       </>
     ),
   },
   {
-    question: (
-      <>
-        Do I need to pay a registration fee to participate in the hackathon? 
-      </>
-    ),
+    question: "Do you provide travel reimbursement?",
     answer: (
       <>
-        No. There is no registration fee for participating in the hackathon. This approach ensures that creativity and innovation can flourish without restrictions, allowing participants to immerse themselves in a collaborative and dynamic environment.🌐✨
+        No, Innovation Hacks 2025 does not offer travel reimbursement for participants. Participants are responsible for their travel expenses, and we recommend planning accordingly.
       </>
     ),
   },
   {
-    question: (
-      <>
-        For the participants, will travel reimbursement be provided? 
-      </>
-    ),
+    question: "Do I need to know how to code?",
     answer: (
       <>
-        No, Hack SoDA 24 does not offer travel reimbursement for participants. Participants are responsible for their travel expenses, and we recommend planning accordingly.
+        Yes, Innovation Hacks 2025 welcomes participants from diverse backgrounds,
+        including those new to coding. We encourage learning and provide resources
+        and mentorship to help you succeed!
       </>
     ),
   },
   {
-    question: (
-      <>
-        Will everyone from ASU be eligible for participation, or is there a selection process? 
-      </>
-    ),
+    question: <>What will I get after attending Innovation Hacks 2025?</>,
     answer: (
       <>
-        Every student from ASU is eligible, as long as we don't reach the venue's maximum capacity. 😊
-      </>
-    ),
-  },
-  {
-    question: (
-      <>
-        Will there be arrangements for staying over night? 
-      </>
-    ),
-    answer: (
-      <>
-      Unfortunately, we won't be able to provide arrangements for any overnight stays. Please ensure you have a place to stay for the night.
+        Innovation Hacks 2025 offers a dynamic platform for learning and collaboration.
+        You'll gain hands-on experience, network with industry professionals,
+        receive mentorship, and have the chance to win exciting prizes. Plus,
+        you'll receive a certificate of participation and create lasting
+        connections in the tech community.
       </>
     ),
   },
@@ -87,7 +68,7 @@ const HacksFaq = [
     question: <>Are team members from other colleges allowed? </>,
     answer: (
       <>
-        Yes, Hack SoDA 2024 welcomes participants from diverse backgrounds,
+        Yes, Innovation Hacks 2025 welcomes participants from diverse backgrounds,
         including those from different colleges. The hackathon encourages
         collaboration and networking among individuals with varied experiences
         and expertise. 🌍
@@ -95,20 +76,7 @@ const HacksFaq = [
     ),
   },
   {
-    question: <>What will I get after attending Hack SoDA 2024? </>,
-    answer: (
-      <>
-        Hack SoDA 2024 offers a dynamic platform for learning and collaboration.
-        Engage in workshops, network with industry professionals, and develop
-        hands-on projects. Gain exposure to cutting-edge technologies, enhance
-        problem-solving skills, and compete for prizes. Elevate your resume,
-        build lasting connections, and join a vibrant community of innovators in
-        this national-level hackathon. 🚀
-      </>
-    ),
-  },
-  {
-    question: <> What if I do not have a team? </>,
+    question: <>What if I do not have a team? </>,
     answer: (
       <>
         We have a great community on Discord. Reach out to other

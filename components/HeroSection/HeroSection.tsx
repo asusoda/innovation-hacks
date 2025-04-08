@@ -1,28 +1,13 @@
 "use client";
 import React from "react";
 import Content from "./Content";
-import Reveal from "./Reaveal";
-// import "../../styles/background.css";
 import "../../styles/hero.css";
 
 export default function HeroSection() {
   return (
-    <div className="mb-10 md:mb-36 gradient-background w-screen sm:scale-150 sm:mt-52 -mt-10">
-      <div className="justify-center space-x-20 items-center flex flex-col-reverse md:flex-row">
-        <div className="">
-          <Content />
-        </div>
-        <Reveal>
-          <div className="heroContainer1 text-center">
-            <img
-              src="/assets/images/cat_mascot.PNG"
-              alt="Hero"
-              width={250}
-              height={250}
-              className="object-contain -ml-10"
-            />
-          </div>
-        </Reveal>
+    <div className="min-h-screen flex items-center justify-center gradient-background w-full py-20">
+      <div className="container mx-auto px-4">
+        <Content />
       </div>
     </div>
   );

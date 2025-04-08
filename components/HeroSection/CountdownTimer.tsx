@@ -33,7 +33,7 @@ const CountdownTimer = () => {
   };
 
   useEffect(() => {
-    const endDate = new Date("2024-10-26T17:00:00Z"); // UTC time equivalent to October 26, 10 AM MST
+    const endDate = new Date("2025-04-19T09:30:00-07:00"); // Arizona time (MST/PDT)
     const intervalId = setInterval(() => {
       calculateTimeRemaining(endDate);
     }, 1000);
@@ -44,26 +44,24 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <>
-      <div className="flex justify-center space-x-4 mt-5">
-        <div className="p-2 rounded-md  shadow-md transform hover:scale-105 transition-transform duration-300  bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30  w-full">
-          <div className="text-4xl font-bold blue-logo">{days}</div>
-          <div className="text-sm text-gray-400 px-3">Days</div>
-        </div>
-        <div className="p-2 rounded-md  shadow-md transform hover:scale-105 transition-transform duration-300 bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 w-full">
-          <div className="text-4xl font-bold text-rose-500">{hours}</div>
-          <div className="text-sm text-gray-400 px-2">Hours</div>
-        </div>
-        <div className="p-2 rounded-md  shadow-md transform hover:scale-105 transition-transform duration-300 bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 w-full">
-          <div className="text-4xl font-bold text-purple-500">{minutes}</div>
-          <div className="text-sm text-gray-400 px-1">Minutes</div>
-        </div>
-        <div className="p-2 rounded-md shadow-md transform hover:scale-105 transition-transform duration-300 bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 w-full">
-          <div className="text-4xl font-bold orange-logo">{seconds}</div>
-          <div className="text-sm text-gray-400 px-1">Seconds</div>
-        </div>
+    <div className="flex justify-center space-x-6 mt-8">
+      <div className="text-center">
+        <div className="text-4xl md:text-5xl font-bold text-[#E066FF] mb-2">{days}</div>
+        <div className="text-sm text-white/80">Days</div>
       </div>
-    </>
+      <div className="text-center">
+        <div className="text-4xl md:text-5xl font-bold text-[#E066FF] mb-2">{hours}</div>
+        <div className="text-sm text-white/80">Hours</div>
+      </div>
+      <div className="text-center">
+        <div className="text-4xl md:text-5xl font-bold text-[#E066FF] mb-2">{minutes}</div>
+        <div className="text-sm text-white/80">Minutes</div>
+      </div>
+      <div className="text-center">
+        <div className="text-4xl md:text-5xl font-bold text-[#E066FF] mb-2">{seconds}</div>
+        <div className="text-sm text-white/80">Seconds</div>
+      </div>
+    </div>
   );
 };
 

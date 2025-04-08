@@ -437,3 +437,80 @@ body {
   backdrop-filter: blur(9.1px);
   -webkit-backdrop-filter: blur(9.1px);
 }
+
+/* Timeline animations */
+@keyframes fillBorderLeft {
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 20%;
+  }
+  75% {
+    width: 50%; 
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes fillBorderRight {
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 50%; 
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+/* Timeline container background effect */
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -25%;
+  width: 650px;
+  height: 800px;
+  border-radius: 50%;
+  background: linear-gradient(343deg, rgba(120, 47, 152, 1) 0%, rgba(5, 50, 129, 1) 82%, rgba(52, 39, 100, 1) 100%);
+  filter: blur(350px);
+  z-index: -1;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  top: 210px;
+  left: -25%;
+  width: 650px;
+  height: 800px;
+  border-radius: 50%;
+  background: linear-gradient(343deg, rgba(120, 47, 152, 1) 0%, rgba(5, 50, 129, 1) 82%, rgba(52, 39, 100, 1) 100%);
+  filter: blur(350px);
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    top: 0;
+    height: 100px;
+    width: 500px;
+    left: 0;
+    filter: blur(100px);
+  }
+
+  .timeline::before {
+    top: 0;
+    width: 0;
+  }
+}

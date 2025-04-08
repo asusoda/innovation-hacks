@@ -51,3 +51,41 @@
     transform: translate(0px, 20px);
   }
 }
+
+.gradient-text {
+  background: linear-gradient(45deg, #FF1B6B, #45CAFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.gradient-background {
+  background: linear-gradient(180deg, #0A0A0A 0%, #1A1A1A 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, rgba(224, 102, 255, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Animation for the gradient effect */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

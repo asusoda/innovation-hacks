@@ -35,3 +35,42 @@
 .border-top {
       border-top: 1px solid rgba(39, 39, 42, 0.5);
 }
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #E066FF;
+}
+
+.nav-button {
+  background-color: #E066FF;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #D15FEF;
+}
+
+.mobile-menu {
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(8px);
+}

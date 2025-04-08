@@ -20,7 +20,6 @@ const Content: React.FC = () => {
       opacity: 1,
       y: 0,
       x: 0,
-
       transition: {
         type: "easeIn",
         duration: 1.1,
@@ -40,62 +39,89 @@ const Content: React.FC = () => {
 
   const controls = useAnimation();
   const ref = useRef(null);
-
   const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
     controls.start("visible");
   }, [controls, isInView]);
+
   return (
     <motion.div
       ref={ref}
-      className="content md:mt-24 mt-4 max-w-[400px] m-auto text-center flex flex-col justify-center items-center space-y-4 md:p-4 p-5"
+      className="content md:mt-24 mt-4 max-w-[600px] m-auto text-center flex flex-col justify-center items-center space-y-4 md:p-4 p-5"
       initial="hidden"
       animate="visible"
       variants={h1Variants}
     >
-      <div>
-        <motion.div className="" variants={childVariants} animate="visible">
-          <motion.div
-            variants={childVariants}
-            className="md:text-4xl text-3xl text-white tracking-wider font-logo font-extrabold m-1 mb-2"
-          >
-            Hack SoDA 24
-          </motion.div>
-          <motion.div
-            variants={childVariants}
-            className="md:text-2xl text-2xl text-white font-content font-bold m-1 mb-2"
-          >
-            October 26 - 27, 2024
+      <div className="w-full">
+        <motion.div variants={childVariants} animate="visible" className="mb-8">
+          <div className="text-xs md:text-sm text-[#E066FF] mb-2 font-medium">
+            The Ultimate Hackathon Brought to You By
+          </div>
+          <div className="flex justify-center items-center space-x-4 text-[#E066FF]">
+            <span>THE AI SOCIETY</span>
+            <span>X</span>
+            <span>GDSC</span>
+            <span>X</span>
+            <span>SoDA</span>
+          </div>
+        </motion.div>
+        <motion.div className="mb-12" variants={childVariants}>
+          <motion.div variants={childVariants} className="flex justify-center">
+            <img 
+              src="/assets/images/innovationhacks.svg" 
+              alt="Innovation Hacks 2025" 
+              className="w-full max-w-[500px] h-auto"
+            />
           </motion.div>
         </motion.div>
-        <motion.p
-          variants={childVariants}
-          animate="visible"
-          className="text-white max-w-[360px] m-auto md:mt-4 mt-2 text-xs md:text-sm"
-          style={{ fontFamily: 'Space Grotesk' }}
-        >
-          <a href ="https://maps.app.goo.gl/9XUDu4uFKyNEWxvX9" target="_blank" rel="noopener noreferrer">
-          Memorial Union Arizona Ballroom (2nd Floor) 301 E Orange St., Tempe, AZ
-          </a>
-        </motion.p>
+        <motion.div className="grid grid-cols-2 gap-8 text-white mb-8">
+          <div className="flex flex-col items-center justify-center text-center">
+            <div className="flex items-center gap-2">
+              <span>📅</span>
+              <div className="flex flex-col items-center">
+                <div className="font-bold">April 19-20</div>
+                <div>2025</div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col items-center justify-center text-center">
+            <div className="flex items-center gap-2 mt-4">
+              <span>📍</span>
+              <div className="flex flex-col items-center">
+                <div className="font-bold">ECG + ECF</div>
+                <div>eSpaces</div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+        <motion.div className="space-y-4 text-white mb-8">
+          <div className="text-lg">Step into ASU's most ambitious student-led hackathon</div>
+          <div>
+            <div>Form a team</div>
+            <div>Build projects that drive real-world change in AI, education, and social impact</div>
+            <div>Compete for over $5,000 in prizes</div>
+          </div>
+        </motion.div>
       </div>
-      <motion.div className="text-md text-white mb-8"> {/* Added margin-bottom for spacing */}
+      <motion.div className="text-md text-white mb-8">
         <CountdownTimer />
       </motion.div>
-      <div className="!mt-10"> {/* Adjusted margin-top if needed */}
+      <div className="!mt-10">
         <a
-          href="https://forms.gle/BSGxRhG26FGhHPd3A"
+          href="https://thesoda.io/"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 py-3 bg-[#ba3554] text-white font-bold rounded-lg hover:bg-red-700 transition-colors duration-300"
+          className="inline-block px-8 py-4 bg-[#E066FF] text-white font-bold rounded-lg hover:bg-[#D15FEF] transition-colors duration-300"
         >
-          Register for Hackathon
+          RSVP NOW
         </a>
+      </div>
+      <div className="text-white text-sm mt-8">
+        FREE FOOD • ALL SKILL LEVELS WELCOME
       </div>
     </motion.div>
   );
-  
 };
 
 export default Content;

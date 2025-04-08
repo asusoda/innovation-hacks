@@ -19,8 +19,8 @@ const About = () => {
 
   return (
     <div className="w-screen flex-col sm:px-14 md:px-40 lg:px-40 xl:px-80 mt-36 sm:mt-56">
-      <h1 className="text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-logo">
-        What is Hack SoDA?
+      <h1 className="text-4xl font-bold text-center mb-8">
+        What is Innovation Hacks?
       </h1>
       <div className="mt-24 flex flex-col sm:flex-row w-full items-center justify-center gap-5 px-5">
         <div className="basis-1/3 border-2 rounded-2xl w-full p-5 glassy-effect aboutContainer1">
@@ -66,17 +66,17 @@ const About = () => {
       <div className="flex flex-col sm:flex-row w-full items-center justify-center gap-5 px-5 mt-5 container1 container2">
         <div className="basis-1/2 border-2 rounded-2xl sm:h-96 w-full p-5 overflow-y-scroll lg:overflow-auto glassy-effect">
           <p className="text-slate-200 text-lg sm:text-xl sm:mt-3">
-            Start building projects and join us at Hack SoDA 2024!
+            Start building projects and join us at Innovation Hacks 2025!
             <br />
             <br />
-            Hack SoDA 2024 is a 24-hour hackathon organized by the Software Developers Association at ASU.
+            Innovation Hacks 2025 is a 24-hour hackathon organized by The AI Society, GDSC, and the Software Developers Association at ASU.
             <br />
             <br />
             This event provides a platform for passionate developers, designers, and enthusiasts to come together and
             transform their ideas into reality.
             <br />
             <br />
-            Whether you've been to tons of hackathons or you're thinking about attending your first, Hack SoDA would love to have you.
+            Whether you've been to tons of hackathons or you're thinking about attending your first, Innovation Hacks would love to have you.
             Join us for a weekend of learning, building, and fun!
           </p>
         </div>

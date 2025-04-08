@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "DIgital Swag",
   description: "Get your digital swag here and post it on social media!",
-  icons: "/assets/images/duhacks.png",
+  icons: "/assets/images/logo-dark-compact.svg",
 };
 
 export default function RootLayout({
