@@ -107,7 +107,7 @@ export default function SponsorsSection2() {
         src : "/assets/images/gdsc.svg",
         alt: "GDSC Logo",
         link: "https://duhacks.tech",
-        class: "scale-[0.5] md:scale-[0.6]",
+        class: "scale-[0.5] md:scale-[1.2]",
       },
       {
         src : "/assets/images/soda.png",
