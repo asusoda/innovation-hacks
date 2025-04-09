@@ -16,6 +16,7 @@ type SponsorsGroup = {
   gold?: Sponsor[];
   general?: Sponsor[];
   silver?: Sponsor[];
+  sponsors?: Sponsor[];
   bronze?: Sponsor[];
   platinum?: Sponsor[];
 };
@@ -63,33 +64,13 @@ export default function SponsorsSection2() {
   //     class: "scale-[0.75] md:scale-[0.85]",
   //   },
   // ],
-    // gold: [
-    //   {
-    //     src: "/sponsors_logos/AXP.svg",
-    //     alt: "AMERICAN EXPRESS LOGO",
-    //     link: "https://www.americanexpress.com",
-    //     class: "scale-[0.3] md:scale-[0.25]",
-    //   },
-    //   {
-    //     src: "/sponsors_logos/GS.svg",
-    //     alt: "GOLDMAN SACHS LOGO",
-    //     link: "https://www.goldmansachs.com",
-    //     class: "scale-[0.3] md:scale-[0.25]",
-    //   },
-    //   {
-    //     src: "/sponsors_logos/SBUX.svg",
-    //     alt: "STARBUCKS LOGO",
-    //     link: "https://www.starbucks.com",
-    //     class: "scale-[0.3] md:scale-[0.25]",
-    //   },
-    //   {
-    //     src: "/sponsors_logos/GDDY_BIG.D.svg",
-    //     alt: "GODADDY LOGO",
-    //     link: "https://www.godaddy.com",
-    //     class: "scale-[0.5] md:scale-[0.50]",
-    //   },
-    // ],
-    general: [
+    gold: [
+      {
+        src : "/sponsors_logos/qruil.svg",
+        alt: "Qruil LOGO",
+        link: "https://qruil.com/",
+        class: "scale-[0.25] md:scale-[0.2]",
+      },
       {
         src : "/sponsors_logos/sunhacks.png",
         alt: "SUNHACKS LOGO",
@@ -160,7 +141,7 @@ export default function SponsorsSection2() {
     gold: {
       imgSize: "h-[120px] w-[250px] px-2 py-1 md:h-[160px] md:w-[500px]",
     },
-    general: {
+    sponsors: {
       imgSize: "h-[120px] w-[250px] px-2 py-1 md:h-[160px] md:w-[500px]",
     },
     event: {
@@ -176,14 +157,14 @@ export default function SponsorsSection2() {
 
   return (
     <div className="pt-16 sm:mt-16">
-      <h1 className="my-10 text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-logo sponsorContainer1">
+      {/* <h1 className="my-10 text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-logo sponsorContainer1">
         Sponsors
-      </h1>
+      </h1> */}
 
       {Object.entries(sponsors).map(([category, sponsorList]) => (
         <div key={category} className={`${category}SponsorContainer`}>
             <h2 className={`text-center m-auto md:my-20 my-10 text-white text-lg md:text-xl xl:text-2xl md:w-1/6 w-1/2 font-semibold px-1 py-2 title-${category.toLowerCase()} rounded-md`}>
-  {category === "general"? "": category =="event" ? "Partners" : category.charAt(0).toUpperCase() + category.slice(1) + " Sponsors"} </h2>
+  {category === "gold"? "Sponsors": category =="event" ? "Partners" : category.charAt(0).toUpperCase() + category.slice(1) + " "} </h2>
 
           <div className="flex flex-wrap justify-center md:px-20">
             {sponsorList.map((sponsor, index) => (
