@@ -66,17 +66,24 @@ export default function SponsorsSection2() {
   // ],
     gold: [
       {
+        src : "/sponsors_logos/amazon.svg",
+        alt: "Amazon LOGO",
+        link: "http://amazon.com//",
+        class: "scale-[0.4] md:scale-[0.3]",
+      },
+      {
+        src : "/sponsors_logos/matlab.png",
+        alt: "Mathworks LOGO",
+        link: "https://www.mathworks.com/",
+        class: "scale-[0.25] md:scale-[0.2]",
+      },
+      {
         src : "/sponsors_logos/qruil.svg",
         alt: "Qruil LOGO",
         link: "https://qruil.com/",
         class: "scale-[0.25] md:scale-[0.2]",
       },
-      {
-        src : "/sponsors_logos/sunhacks.png",
-        alt: "SUNHACKS LOGO",
-        link: "https://sunhacks.io",
-        class: "scale-[0.25] md:scale-[0.3]",
-      },
+      
     ],
     event:[
       // {
@@ -101,20 +108,32 @@ export default function SponsorsSection2() {
         src : "/assets/images/AI_Society.png",
         alt: "AI SOCIETY LOGO",
         link: "https://aisocietyasu.org",
-        class: "scale-[0.5] md:scale-[0.3]",
+        class: "scale-[0.3] md:scale-[0.3]",
       },
       {
         src : "/assets/images/gdsc.svg",
         alt: "GDSC Logo",
-        link: "https://duhacks.tech",
+        link: "https://students.engineering.asu.edu/clubs/gdsc/",
         class: "scale-[0.5] md:scale-[1.2]",
+      },
+      {
+        src : "/assets/images/acm.png",
+        alt: "ACM Logo",
+        link: "https://www.linkedin.com/company/acm-asu",
+        class: "scale-[0.3] md:scale-[0.4]",
       },
       {
         src : "/assets/images/soda.png",
         alt: "SoDA LOGO",
         link: "https://sodaasu.org",
         class: "scale-[0.5] md:scale-[0.3]",
-      }
+      },
+      {
+        src : "/sponsors_logos/sunhacks.png",
+        alt: "SUNHACKS LOGO",
+        link: "https://sunhacks.io",
+        class: "scale-[0.25] md:scale-[0.3]",
+      },
      /* 
        {
         src : "/sponsors_logos/mlh.svg",
