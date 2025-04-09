@@ -31,7 +31,7 @@ const Footer = () => {
     <footer className=" p-4  bg-black  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5">
       <div className="flex flex-col items-center">
         {/* Organization Logos */}
-        <div className="flex flex-row flex-wrap  justify-center items-center space-x-8 mb-8">
+        {/* <div className="flex flex-row flex-wrap  justify-center items-center space-x-8 mb-8">
           <a href={SOCIALS.ai_discord} target="_blank" rel="noopener noreferrer">
             <Image src="/assets/images/AI_Society.png" alt="AI Society Logo" width={120} height={40} className="object-contain hover:opacity-80 transition-opacity" />
          </a>
@@ -41,13 +41,13 @@ const Footer = () => {
           <a href={SOCIALS.gdsc_discord} target="_blank" rel="noopener noreferrer">
             <Image src="/assets/images/gdsc.svg" alt="GDSC Logo" width={120} height={40} className="object-contain hover:opacity-80 transition-opacity" />
           </a>
-        </div>
+        </div> */}
         
         {/* Social media links */}
-        <div className="flex flex-col items-center space-y-4 mb-9">
+        <div className="flex flex-col items-center  space-y-4 mb-9">
           <div className="flex space-x-8 text-sm">
             <div className="flex flex-col items-center">
-              <span className="text-gray-400 mb-2">AI Society</span>
+              <span className="text-gray-400 mb-2 text-2xl">AI Society</span>
               <div className="flex space-x-4">
                 <a href={SOCIALS.ai_discord} className="hover:text-[#E066FF] transition-colors" target="_blank" rel="noopener noreferrer">
                   <FaDiscord className="text-xl" />
@@ -58,7 +58,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-gray-400 mb-2">SoDA</span>
+              <span className="text-gray-400 mb-2 text-2xl">SoDA</span>
               <div className="flex space-x-4">
                 <a href={SOCIALS.soda_discord} className="hover:text-[#E066FF] transition-colors" target="_blank" rel="noopener noreferrer">
                   <FaDiscord className="text-xl" />
@@ -69,7 +69,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-gray-400 mb-2">GDSC</span>
+              <span className="text-gray-400 mb-2 text-2xl" >GDSC</span>
               <div className="flex space-x-4">
                 <a href={SOCIALS.gdsc_discord} className="hover:text-[#E066FF] transition-colors" target="_blank" rel="noopener noreferrer">
                   <FaDiscord className="text-xl" />

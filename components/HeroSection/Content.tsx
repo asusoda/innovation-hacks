@@ -63,7 +63,7 @@ const Content: React.FC = () => {
   return (
     <motion.div
       ref={ref}
-      className="min-h-screen     h-auto items-center md:px-36 px-8 md:gap-x-16 gap-y-8  gradient-background w-full  flex flex-col  md:flex-row  "
+      className="min-h-screen  md:pt-[0px] pt-[40vw]   h-auto items-center md:px-36 px-8 md:gap-x-16 gap-y-8  gradient-background w-full  flex flex-col  md:flex-row  "
       initial="hidden"
       animate="visible"
       variants={h1Variants}
