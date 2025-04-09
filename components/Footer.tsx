@@ -39,7 +39,7 @@ const Footer = () => {
             <Image src="/assets/images/soda.png" alt="SoDA Logo" width={120} height={40} className="object-contain hover:opacity-80 transition-opacity" />
           </a>
           <a href={SOCIALS.gdsc_discord} target="_blank" rel="noopener noreferrer">
-            <Image src="/assets/images/gdsc.png" alt="GDSC Logo" width={120} height={40} className="object-contain hover:opacity-80 transition-opacity" />
+            <Image src="/assets/images/gdsc.svg" alt="GDSC Logo" width={120} height={40} className="object-contain hover:opacity-80 transition-opacity" />
           </a>
         </div>
         

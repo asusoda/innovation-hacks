@@ -63,7 +63,7 @@ const Content: React.FC = () => {
   return (
     <motion.div
       ref={ref}
-      className="min-h-screen  justify-center flex-grow h-auto items-center md:px-36 px-8 md:gap-x-8 gap-y-8  gradient-background w-full  flex flex-col  md:flex-row  "
+      className="min-h-screen     h-auto items-center md:px-36 px-8 md:gap-x-16 gap-y-8  gradient-background w-full  flex flex-col  md:flex-row  "
       initial="hidden"
       animate="visible"
       variants={h1Variants}
@@ -71,7 +71,7 @@ const Content: React.FC = () => {
             <Image
             width={250}
             height={250}
-              src="/assets/images/innovationhacks.svg" 
+              src="/assets/images/innovationhacks2.svg" 
               alt="Innovation Hacks 2025" 
               className="flex flex-col md:w-1/2 w-full "
             />
@@ -79,16 +79,16 @@ const Content: React.FC = () => {
         </motion.div> */}
       <motion.div className="flex flex-col w-full h-full gap-y-2 justify-between ">
 
-        <motion.div className="flex flex-col w-full justify-between   gap-2  text-white ">
-          <motion.div className="flex text-left flex-col glassy-effect  px-5  py-4 rounded-3xl  w-full  text-2xl   md:text-7xl ">
+        <motion.div className="flex flex-col w-full    gap-2  text-white ">
+          <motion.div className="flex text-left flex-col   px-5   rounded-3xl  w-full  text-2xl   md:text-7xl ">
             
-                <h1 className="font-bold text-left ">April 19-20</h1>
+                <h1 className=" text-left ">April 19-20</h1>
             
           </motion.div>
           
-          <div className="flex text-left flex-col  glassy-effect  px-5  py-4 rounded-3xl  w-full     text-2xl   md:text-7xl ">
+          <div className="flex text-left flex-col    px-5   rounded-3xl  w-full     text-2xl   md:text-7xl ">
             
-                <h1 className="font-bold  ">ECG + ECF</h1>
+                <h1 className="  ">ECG + ECF</h1>
             
           </div>
           

@@ -44,17 +44,17 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-      <div className="flex   p-2  text-2xl   md:text-7xl flex-row rounded-3xl  glassy-effect   space-x-6 "><div className="text-center">
-      <div className=" font-bold text-[#E066FF] mb-2">{days}</div>
+      <div className="flex   p-2  text-2xl   md:text-7xl flex-row rounded-3xl     space-x-6 "><div className="text-center">
+      <div className="  text-[#E066FF] mb-2">{days}</div>
       <div className="text-sm text-white/80">Days</div>
     </div><div className="text-center">
-        <div className="font-bold text-[#E066FF] mb-2">{hours}</div>
+        <div className=" text-[#E066FF] mb-2">{hours}</div>
         <div className="text-sm text-white/80">Hours</div>
       </div><div className="text-center">
-        <div className=" font-bold text-[#E066FF] mb-2">{minutes}</div>
+        <div className="  text-[#E066FF] mb-2">{minutes}</div>
         <div className="text-sm text-white/80">Minutes</div>
       </div><div className="text-center">
-        <div className=" font-bold text-[#E066FF] mb-2">{seconds}</div>
+        <div className="  text-[#E066FF] mb-2">{seconds}</div>
         <div className="text-sm text-white/80">Seconds</div>
       </div></div>
   );
