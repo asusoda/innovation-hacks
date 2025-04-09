@@ -37,7 +37,7 @@ function SponsorsSection() {
         Sponsors
       </h1>
       <div className="md:mt-24 mt-14">
-        <h2 className="text-center m-auto md:my-8 my-4 text-white text-lg md:text-xl xl:text-2xl   md:w-1/6 w-1/2 font-semibold px-1 py-2 title-platinum rounded-md">
+        {/* <h2 className="text-center m-auto md:my-8 my-4 text-white text-lg md:text-xl xl:text-2xl   md:w-1/6 w-1/2 font-semibold px-1 py-2 title-platinum rounded-md">
           Platinum Sponsors
         </h2>
         <Marquee speed={20} autoFill={true}>
@@ -62,10 +62,10 @@ function SponsorsSection() {
               imageAlt={alt}
             />
           ))}
-        </Marquee>
-        <h2 className="text-center m-auto md:my-8 my-4 text-white text-lg md:text-xl xl:text-2xl   md:w-1/6 w-1/2  font-semibold px-1 py-2 title-gold  rounded-md">
+        </Marquee> */}
+        {/* <h2 className="text-center m-auto md:my-8 my-4 text-white text-lg md:text-xl xl:text-2xl   md:w-1/6 w-1/2  font-semibold px-1 py-2 title-gold  rounded-md">
           Gold Sponsors
-        </h2>
+        </h2> */}
 
         <Marquee speed={60} autoFill={true}>
           {gold.map(({ src, alt }) => (

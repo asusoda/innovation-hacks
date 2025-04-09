@@ -14,6 +14,7 @@ type Sponsor = {
 type SponsorsGroup = {
   event?: Sponsor[];
   gold?: Sponsor[];
+  general?: Sponsor[];
   silver?: Sponsor[];
   bronze?: Sponsor[];
   platinum?: Sponsor[];
@@ -30,83 +31,109 @@ export default function SponsorsSection2() {
   };
   const sponsors: SponsorsGroup = {
     //emerald: [{ src: "/sponsors_logos/Devfolio_Logo-White.svg", alt: "LOGO" }],
-    platinum: [    
-      {
-      src: "/sponsors_logos/amazon.svg",
-      alt: "AMAZON LOGO",
-      link: "https://amazon.com",
-      class: "scale-[0.6] md:scale-[0.6]",
-    },
-    {
-      src: "/sponsors_logos/statefarmm.png",
-      alt: "STATEFARM LOGO",
-      link: "https://www.statefarm.com",
-      class: "scale-[0.5] md:scale-[0.5]",
-    },
-    {
-      src: "/sponsors_logos/OH.png",
-      alt: "OPPORTUNITY HACKS LOGO ",
-      link: "https://www.ohack.org",
-      class: "scale-[0.6] md:scale-[0.6]",
-    },
-    {
-      src: "/sponsors_logos/viasat.svg",
-      alt: "VIASAT LOGO",
-      link: "https://www.viasat.com",
-      class: "scale-[1.3] md:scale-[2.4]",
-    },
-    {
-      src: "/sponsors_logos/sn.png",
-      alt: "SERVICENOW LOGO",
-      link: "https://www.servicenow.com",
-      class: "scale-[0.75] md:scale-[0.85]",
-    },
-  ],
-    gold: [
-      {
-        src: "/sponsors_logos/AXP.svg",
-        alt: "AMERICAN EXPRESS LOGO",
-        link: "https://www.americanexpress.com",
-        class: "scale-[0.3] md:scale-[0.25]",
-      },
-      {
-        src: "/sponsors_logos/GS.svg",
-        alt: "GOLDMAN SACHS LOGO",
-        link: "https://www.goldmansachs.com",
-        class: "scale-[0.3] md:scale-[0.25]",
-      },
-      {
-        src: "/sponsors_logos/SBUX.svg",
-        alt: "STARBUCKS LOGO",
-        link: "https://www.starbucks.com",
-        class: "scale-[0.3] md:scale-[0.25]",
-      },
-      {
-        src: "/sponsors_logos/GDDY_BIG.D.svg",
-        alt: "GODADDY LOGO",
-        link: "https://www.godaddy.com",
-        class: "scale-[0.5] md:scale-[0.50]",
-      },
-    ],
-    event:[
-      {
-        src : "/sponsors_logos/Quant.png",
-        alt: "QUANT QUESTIONS LOGO",
-        link: "https://quantquestions.io",
-        class: "scale-[0.25] md:scale-[0.3]",
-      },
+  //   platinum: [    
+  //     {
+  //     src: "/sponsors_logos/amazon.svg",
+  //     alt: "AMAZON LOGO",
+  //     link: "https://amazon.com",
+  //     class: "scale-[0.6] md:scale-[0.6]",
+  //   },
+  //   {
+  //     src: "/sponsors_logos/statefarmm.png",
+  //     alt: "STATEFARM LOGO",
+  //     link: "https://www.statefarm.com",
+  //     class: "scale-[0.5] md:scale-[0.5]",
+  //   },
+  //   {
+  //     src: "/sponsors_logos/OH.png",
+  //     alt: "OPPORTUNITY HACKS LOGO ",
+  //     link: "https://www.ohack.org",
+  //     class: "scale-[0.6] md:scale-[0.6]",
+  //   },
+  //   {
+  //     src: "/sponsors_logos/viasat.svg",
+  //     alt: "VIASAT LOGO",
+  //     link: "https://www.viasat.com",
+  //     class: "scale-[1.3] md:scale-[2.4]",
+  //   },
+  //   {
+  //     src: "/sponsors_logos/sn.png",
+  //     alt: "SERVICENOW LOGO",
+  //     link: "https://www.servicenow.com",
+  //     class: "scale-[0.75] md:scale-[0.85]",
+  //   },
+  // ],
+    // gold: [
+    //   {
+    //     src: "/sponsors_logos/AXP.svg",
+    //     alt: "AMERICAN EXPRESS LOGO",
+    //     link: "https://www.americanexpress.com",
+    //     class: "scale-[0.3] md:scale-[0.25]",
+    //   },
+    //   {
+    //     src: "/sponsors_logos/GS.svg",
+    //     alt: "GOLDMAN SACHS LOGO",
+    //     link: "https://www.goldmansachs.com",
+    //     class: "scale-[0.3] md:scale-[0.25]",
+    //   },
+    //   {
+    //     src: "/sponsors_logos/SBUX.svg",
+    //     alt: "STARBUCKS LOGO",
+    //     link: "https://www.starbucks.com",
+    //     class: "scale-[0.3] md:scale-[0.25]",
+    //   },
+    //   {
+    //     src: "/sponsors_logos/GDDY_BIG.D.svg",
+    //     alt: "GODADDY LOGO",
+    //     link: "https://www.godaddy.com",
+    //     class: "scale-[0.5] md:scale-[0.50]",
+    //   },
+    // ],
+    general: [
       {
         src : "/sponsors_logos/sunhacks.png",
         alt: "SUNHACKS LOGO",
         link: "https://sunhacks.io",
         class: "scale-[0.25] md:scale-[0.3]",
       },
+    ],
+    event:[
+      // {
+      //   src : "/sponsors_logos/Quant.png",
+      //   alt: "QUANT QUESTIONS LOGO",
+      //   link: "https://quantquestions.io",
+      //   class: "scale-[0.25] md:scale-[0.3]",
+      // },
+      // {
+      //   src : "/sponsors_logos/sunhacks.png",
+      //   alt: "SUNHACKS LOGO",
+      //   link: "https://sunhacks.io",
+      //   class: "scale-[0.25] md:scale-[0.3]",
+      // },
+      // {
+      //   src : "/sponsors_logos/celsius.svg",
+      //   alt: "CELSIUS LOGO",
+      //   link: "https://www.celsius.com",
+      //   class: "scale-[0.5] md:scale-[0.6]",
+      // },
       {
-        src : "/sponsors_logos/celsius.svg",
-        alt: "CELSIUS LOGO",
-        link: "https://www.celsius.com",
+        src : "/assets/images/AI_Society.png",
+        alt: "AI SOCIETY LOGO",
+        link: "https://aisocietyasu.org",
+        class: "scale-[0.5] md:scale-[0.3]",
+      },
+      {
+        src : "/assets/images/gdsc.svg",
+        alt: "GDSC Logo",
+        link: "https://duhacks.tech",
         class: "scale-[0.5] md:scale-[0.6]",
       },
+      {
+        src : "/assets/images/soda.png",
+        alt: "SoDA LOGO",
+        link: "https://sodaasu.org",
+        class: "scale-[0.5] md:scale-[0.3]",
+      }
      /* 
        {
         src : "/sponsors_logos/mlh.svg",
@@ -133,6 +160,9 @@ export default function SponsorsSection2() {
     gold: {
       imgSize: "h-[120px] w-[250px] px-2 py-1 md:h-[160px] md:w-[500px]",
     },
+    general: {
+      imgSize: "h-[120px] w-[250px] px-2 py-1 md:h-[160px] md:w-[500px]",
+    },
     event: {
       imgSize: "h-[80px] w-[250px] px-2 py-1 md:h-[140px] md:w-[420px]",
     },
@@ -153,7 +183,7 @@ export default function SponsorsSection2() {
       {Object.entries(sponsors).map(([category, sponsorList]) => (
         <div key={category} className={`${category}SponsorContainer`}>
             <h2 className={`text-center m-auto md:my-20 my-10 text-white text-lg md:text-xl xl:text-2xl md:w-1/6 w-1/2 font-semibold px-1 py-2 title-${category.toLowerCase()} rounded-md`}>
-  {category === "event" ? "Partners" : category.charAt(0).toUpperCase() + category.slice(1) + " Sponsors"} </h2>
+  {category === "general"? "": category =="event" ? "Partners" : category.charAt(0).toUpperCase() + category.slice(1) + " Sponsors"} </h2>
 
           <div className="flex flex-wrap justify-center md:px-20">
             {sponsorList.map((sponsor, index) => (

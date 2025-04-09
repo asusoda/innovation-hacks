@@ -36,7 +36,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
       <div className="container mx-auto flex items-center justify-between">
         <div className="logo">
           <a href="#hero" className="text-white text-2xl font-bold">
-            Innovation Hacks
+            <img height={100} width={250} src={"/assets/images/navbar_logo.png"}/>
           </a>
         </div>
         <div className="hidden md:flex items-center space-x-12">
