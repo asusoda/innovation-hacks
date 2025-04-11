@@ -91,33 +91,24 @@ const HacksFaq = [
 
 export default function FAQ() {
   return (
-    <div className="mt-16 sm:mt-16" id="faq">
-      <Container>
-        <div className="mt-32 flex flex-col gap-12 lg:flex-row p-10 ">
-          <div className="text-center lg:w-5/12 lg:pl-12 lg:text-left  flex flex-col">
+        <div className="mt-32 w-full items-center justify-center flex flex-col gap-12  p-10 ">
+          <div className="text-center   flex flex-col">
             <div className="my-8 text-white text-xl sm:text-2xl md:text-4xl">
-              <h2 className="text-2xl font-bold text-white dark:text-white md:text-3xl lg:text-4xl font-logo">
+              <h2 className="text-2xl text-center font-bold text-white dark:text-white md:text-3xl lg:text-4xl font-logo">
                 Frequently Asked Questions
               </h2>
             </div>
 
-            <div className="faqContainer1 relative">
-              {/* <div className="flex justify-center"> */}
-
-              {/* </div> */}
-            </div>
           </div>
-          <div className="lg:w-7/12 ">
+          <div className="flex w-full faqContainer1  flex-col items-center justify-center">
             <Disclosures />
           </div>
         </div>
-      </Container>
-    </div>
   );
 }
 
 export function Disclosures({ full = false }) {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0);
 
   const handleToggle = (index: any) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
@@ -128,7 +119,7 @@ export function Disclosures({ full = false }) {
       {HacksFaq.map((item, i) => (
         <div
           key={String(i)}
-          className={`mx-auto text-lg ${full ? "" : "max-w-2xl"}`}
+          className={`mx-auto text-lg ${full ? "" : "max-w-5xl"}`}
         >
           {/* rome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
 <div
