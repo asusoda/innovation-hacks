@@ -62,14 +62,11 @@ export default function Reveal({ children , even=false }: props) {
           },
         }}
         initial="hidden"
-        animate={controls}
+        animate={isInView ? "visible" : "hidden"}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
         {children}
       </motion.div>
-      {/* <motion.div ref={ref} variants={card}>
-        {children}
-      </motion.div> */}
     </motion.div>
   );
 }

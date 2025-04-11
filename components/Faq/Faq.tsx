@@ -9,8 +9,9 @@ const HacksFaq = [
     answer: (
       <>
         Innovation Hacks 2025 is open to a diverse range of participants, including
-        students, developers, designers, and tech enthusiasts. Whether you're a
-        beginner or an experienced coder, there's a place for you here!
+        students, developers, designers, and tech enthusiasts. However, participants
+        must be part of Arizona State University. Whether you're a beginner or an
+        experienced coder, there's a place for you here!
       </>
     ),
   },
@@ -50,8 +51,7 @@ const HacksFaq = [
         Innovation Hacks 2025 offers a dynamic platform for learning and collaboration.
         You'll gain hands-on experience, network with industry professionals,
         receive mentorship, and have the chance to win exciting prizes. Plus,
-        you'll receive a certificate of participation and create lasting
-        connections in the tech community.
+        you'll create lasting connections in the tech community.
       </>
     ),
   },
@@ -59,7 +59,7 @@ const HacksFaq = [
     question: <>What should be the team size? </>,
     answer: (
       <>
-        The team size can range from a minimum of 1 participant to a maximum of
+        The team size can range from a minimum of 2 participant to a maximum of
         4 participants. 🤝
       </>
     ),
@@ -68,10 +68,8 @@ const HacksFaq = [
     question: <>Are team members from other colleges allowed? </>,
     answer: (
       <>
-        Yes, Innovation Hacks 2025 welcomes participants from diverse backgrounds,
-        including those from different colleges. The hackathon encourages
-        collaboration and networking among individuals with varied experiences
-        and expertise. 🌍
+        No, Innovation Hacks 2025 welcomes participants from diverse backgrounds,
+        only from Arizona State University.
       </>
     ),
   },

@@ -107,7 +107,7 @@ export default function SponsorsSection2() {
       {
         src : "/assets/images/AI_Society.png",
         alt: "AI SOCIETY LOGO",
-        link: "https://aisocietyasu.org",
+        link: "https://ais-website-mu.vercel.app/",
         class: "scale-[0.3] md:scale-[0.3]",
       },
       {
@@ -125,7 +125,7 @@ export default function SponsorsSection2() {
       {
         src : "/assets/images/soda.png",
         alt: "SoDA LOGO",
-        link: "https://sodaasu.org",
+        link: "https://thesoda.io/",
         class: "scale-[0.5] md:scale-[0.3]",
       },
       {

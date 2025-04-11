@@ -22,7 +22,7 @@ const Footer = () => {
     
     // AI Society socials
     ai_instagram: "https://www.instagram.com/theaisociety.asu/",
-    ai_discord: "https://discord.gg/7r3wgNzSkG",
+    ai_discord: "https://discord.gg/dCWm6xBGtM",
     ai_linkedin: "https://www.linkedin.com/company/ai-society-asu/",
     ai_twitter: "https://x.com/ai_society_asu",
   };
