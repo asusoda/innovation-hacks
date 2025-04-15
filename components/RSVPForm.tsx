@@ -189,7 +189,7 @@ const RSVPForm = () => {
                 {/* Iframe with Notion RSVP form */}
                 <div className={`${loading ? 'hidden' : 'block'} max-h-[85vh]`}>
                   <iframe 
-                    src="https://innovationhacks.notion.site/ebd/1ce8867868b480b19869df71a158e637" 
+                    src="https://theaisociety.notion.site/ebd/1ce8867868b480b19869df71a158e637" 
                     width="100%" 
                     height="800" 
                     className="bg-transparent backdrop-blur-lg"
