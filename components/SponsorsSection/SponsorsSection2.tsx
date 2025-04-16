@@ -187,9 +187,8 @@ export default function SponsorsSection2() {
 
           <div className="flex flex-wrap justify-center md:px-20">
             {sponsorList.map((sponsor, index) => (
-              <a href={sponsor.link ? sponsor.link : ""} target="_blank">
+              <a key={index} href={sponsor.link ? sponsor.link : ""} target="_blank" rel="noopener noreferrer">
                 <div
-                  key={index}
                   className={`m-4 glassy-div bg-cover bg-center flex items-center justify-center no-repeat rounded-2xl md:p-5 p-1 hover-effect-${category} ${
                     sponsor.link ? "cursor-pointer" : "cursor-default"
                   } ${categorySizes[category]?.imgSize}`}
