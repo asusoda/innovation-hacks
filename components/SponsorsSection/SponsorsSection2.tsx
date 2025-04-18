@@ -83,12 +83,6 @@ export default function SponsorsSection2() {
         link: "https://qruil.com/",
         class: "scale-[0.25] md:scale-[0.2]",
       },
-      {
-        src: "/sponsors_logos/simplify.png",
-        alt: "Simplify LOGO",
-        link: "https://simplify.jobs/",
-        class: "scale-[0.5] md:scale-[0.5]",
-      },
     ],
     event: [
       // {
