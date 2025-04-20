@@ -94,33 +94,21 @@ const Content: React.FC = () => {
       <motion.div className="flex flex-col items-center md:items-center w-full md:w-1/2 space-y-6 mt-6 md:mt-0 md:pl-4">
         <CountdownTimer />
         <div className="flex flex-col gap-4 md:gap-6 w-full max-w-md mx-auto md:max-w-none">
-          <button
-            onClick={handleRSVPClick}
-            className="bg-[#E066FF] w-full hover:bg-[#D15FEF] text-white py-2 px-4 md:py-3 md:px-6 rounded-2xl font-semibold shadow-lg transition duration-300 flex items-center justify-center"
+          <a
+            href="https://innovationhacks-2025.devpost.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#003E54] w-full hover:bg-[#003E54] text-white py-2 px-4 md:py-3 md:px-6 rounded-2xl font-semibold shadow-lg transition duration-300 flex items-center justify-center"
           >
-            <span>RSVP Now</span>
-            <svg
-              className="w-5 h-5 ml-2"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </button>
+            <span>Devpost Submission</span>
+          </a>
           <a
             href="https://discord.gg/bcs3bxaVbV"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#5865F2] w-full hover:bg-[#4752C4] text-white py-2 px-4 md:py-3 md:px-6 rounded-2xl font-semibold shadow-lg transition duration-300 flex items-center justify-center"
           >
-            <span>Find Teammates on Discord</span>
+            <span>Join Discord</span>
             <svg
               className="w-5 h-5 ml-2"
               fill="currentColor"
