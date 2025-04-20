@@ -43,7 +43,7 @@ const items = [
   },
   {
     key: 7,
-    title: "20th Apr 11:00 AM",
+    title: "20th Apr 10:30 AM",
     cardTitle: "Solution Submission Deadline",
     cardDetailedText: "Final deadline to submit your projects.",
   },
